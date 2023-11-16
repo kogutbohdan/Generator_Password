@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Window</class>
+ <widget class="QMainWindow" name="Window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>739</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Генератор паролів</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:rgb(6, 18, 48);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="caption">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>371</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:40px;
+color:#fff;
+</string>
+    </property>
+    <property name="text">
+     <string>Генератор паролів</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_result">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>110</y>
+      <width>401</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:30px;
+font-style:bold;
+color:#fff</string>
+    </property>
+    <property name="text">
+     <string>тут буде результат</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>370</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background:rgb(78, 154, 6);
+	border:0px;
+	border-radius:10px;
+}
+
+QPushButton:hover{
+	background:rgb(115, 210, 22);
+}
+
+QPushButton:pressed{
+	background:rgb(255, 255, 255)
+}</string>
+    </property>
+    <property name="text">
+     <string>Згенерувати</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="check1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>220</y>
+      <width>261</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox{
+	color:#fff;
+	font-size:20px;
+	border-color:rgb(255, 255, 255);
+	
+}
+
+QCheckBox::indicator{
+	background:rgb(186, 189, 182);
+	border:3px solid rgb(136, 138, 133);
+	width:13px;
+	height:13px;
+}
+
+QCheckBox::indicator:checked{
+	background:rgb(25, 129, 203)
+}</string>
+    </property>
+    <property name="text">
+     <string>використовувати числа</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="check2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>260</y>
+      <width>291</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox{
+	color:#fff;
+	font-size:20px;
+	border-color:rgb(255, 255, 255);
+	
+}
+
+QCheckBox::indicator{
+	background:rgb(186, 189, 182);
+	border:3px solid rgb(136, 138, 133);
+	width:13px;
+	height:13px;
+}
+
+QCheckBox::indicator:checked{
+	background:rgb(25, 129, 203)
+}</string>
+    </property>
+    <property name="text">
+     <string>використовувати алфавіт</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="lengthPassword">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>320</y>
+      <width>261</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSpinBox{
+	font-size:20px;
+	color:#fff;
+}
+
+QSpinBox:focus{
+	border:1px solid #fff;
+	background:rgb(29, 30, 87);
+}
+
+QSpinBox:hover{
+	background:rgb(29, 30, 87);
+}</string>
+    </property>
+    <property name="minimum">
+     <number>4</number>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+    <property name="singleStep">
+     <number>1</number>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
